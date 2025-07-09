@@ -1,0 +1,114 @@
+/* All Pages */
+
+div.skip_div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+a.skip{
+    background: black;
+    justify-self: center;
+    padding: 6px;
+    position: absolute;
+    top: -80px;
+    border-radius: 5px;
+    transition: top .8s ease-in-out; 
+    z-index: 1;
+  }
+
+a.skip:focus{
+    top:20px;
+    color: white;
+    text-decoration-style: solid;
+}
+
+h1 {
+    color: white;
+    font-size: 7.2vw;
+    line-height: 150%;
+    padding: 2% 5%;
+}
+
+a {
+    color: white;
+    font-size: 2.5vw;
+}
+
+a.current {
+    color: yellow;
+    font-weight: bolder;
+    font-size: 110%;
+}
+
+
+nav{
+    text-align: right;
+    padding: 1% 2%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2.5vw;
+    height: auto;
+}
+
+.big_nav {
+    width: 100%;
+    padding: 1% 0%;
+}
+
+.big_nav li{
+    display: inline;
+    padding: 0 1%;
+    justify-content: center
+}
+
+.name{
+    float: left;
+    display: flex;
+    text-align:center;
+    padding-left: 1%;
+    color: white;
+    text-decoration: none;
+}
+
+.eclipse{
+    width: 4%;
+    height: auto;
+    float: left;
+    align-content: center;
+    padding: .45% 0%;
+    /* margin-top: .3%; */
+}
+
+
+/* .name::before{
+    /* content:url("../home_images/eclipse_small_circle.png");
+    width: 5%; */
+
+    /* background-image: url("../home_images/eclipse_small_circle.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block; */
+    /* width: 3vw;  */
+    /* height: 3vw; */
+    /* content:""; */
+    /* padding-right: 1vw; */
+
+
+/* Home */
+
+.home {
+    background-color: lightcyan;
+    background-image: url(../home_images/star1.jpg);
+    background-position: center center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+
+.tolk {
+    text-align: right;
+    font-size: 60%;
+}
+
+
