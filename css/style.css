@@ -171,10 +171,11 @@ nav{
 
 .quote {
     font-size: 200%;
+    padding: 0 5%;
 }
 
-.quote span {
-    margin: 7% 0;
+.not, .all, .those, .who, .wander {
+    margin: 8% 0;
 }
 
 .all {
@@ -191,6 +192,11 @@ nav{
 .wander {
     display: block;
     text-align: right;
+}
+
+.are{
+    display: block;
+    margin-top: 12%;
 }
 
 .tolk {
@@ -289,8 +295,6 @@ nav{
     }
 
     /* Home */
-    
-
 
     .all {
         padding: 0;
