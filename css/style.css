@@ -172,6 +172,8 @@ nav{
 .quote {
     font-size: 200%;
     padding: 5% 5%;
+    height: 90dvh;
+    align-content: center;
 }
 
 .not, .all, .those, .who, .wander {
