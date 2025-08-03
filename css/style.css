@@ -169,11 +169,35 @@ nav{
     background-size: cover;
 }
 
+.quote {
+    font-size: 200%;
+}
+
+.quote span {
+    margin: 7% 0;
+}
+
+.all {
+    display: block;
+    text-align: center;
+    padding-right: 20%;
+}
+
+.those {
+    display: block;
+    text-align: right;
+}
+
+.wander {
+    display: block;
+    text-align: right;
+}
 
 .tolk {
     text-align: right;
     font-size: 60%;
 }
+
 
 .main_info {
     display: grid;
@@ -219,11 +243,9 @@ nav{
 }
 
 
+@media screen and (min-width: 600px) {
 
-
-
-@media screen and (min-width: 673px) {
-
+    /* General */
     .small_nav{
         display: none;
     }
@@ -264,6 +286,23 @@ nav{
         background-repeat: no-repeat;
         background-position: center;
         align-self: center;
+    }
+
+    /* Home */
+    
+
+
+    .all {
+        padding: 0;
+        display: inline;
+    }
+
+    .those, .wander {
+        display: inline;
+    }
+
+    .are {
+        display: block;
     }
 
 }
