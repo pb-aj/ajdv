@@ -170,7 +170,7 @@ nav{
 }
 
 .quote {
-    font-size: 200%;
+    font-size: 190%;
     padding: 5% 0%;
     min-height: 90dvh;
     max-height: 100dvh;
@@ -193,24 +193,40 @@ nav{
     height: 100%;
 }
 
-
-.main_info {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding: 2%;
-    font-size: 120%;
-    color: white;
-    gap: 5%;
-    background-color: rgba(0,0,0,0.5);
-    
+.big_content{
+    display: none;
 }
 
-.main_info > div:first-child {
-  grid-column: 1 / -1; /* Spans from the first column line to the last */
+.small_content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: fit-content;
+    padding: 5%;
+    font-size: 120%;
+    color: white;
+    gap: 2%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nice_aj {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.nice_aj img {
+    max-width: 100%;
+    max-height: 95%;
+    object-fit: contain;
 }
 
 .experience_list{
-    padding-left: 10%;
+    padding-left: 5%;
 }
 
 .experience_list li{
@@ -219,23 +235,85 @@ nav{
 }
 
 .experience_list li::marker {
-  content: "\f005"; /* FontAwesome Unicode */
-  font-family: FontAwesome;
-  font-size: var(--icon-size);
-  color: #275656;
+content: "\f005";
+font-family: FontAwesome;
+font-size: var(--icon-size);
+color: #275656;
 }
 
-.nice_aj img {
-    max-width: 90%;
-    max-height: 95%;
-    object-fit: contain;
-    align-self: center;
-    justify-self: center;
+.small_content > div:nth-child(3) {
+    grid-column: 1 / -1; 
 }
 
-.main_info div{
+.small_content > div:last-child {
+    grid-column: 1 / -1; 
+}
+
+.more_info {
+    text-align: center;
+    padding: 5% 0;
+}
+
+.page_containers{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: fit-content;
+    padding: 5% 5% 10%;
+    font-size: 120%;
+    color: white;
+    gap: 2%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.page_containers div{
+    text-align: center;
+}
+
+.page_containers a{
+    background-color: rgba(0,0,0,0.5);
+    padding: 2%;
+}
+
+.research_icon{
+    background-color: black;
+}
+
+.research_icon video{
     height: auto;
+    width: 100%;
 }
+
+.research_icon span{
+    position: relative;
+    top: 15.4vw;
+    z-index: 2;
+}
+
+.about_icon {
+    background-image: url("../home_images/map.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+}
+
+.projects_icon {
+    background-image: url("../home_images/lc.png");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+}
+
+
 
 
 @media screen and (min-width: 673px) {
@@ -301,12 +379,59 @@ nav{
         margin: 4% 0%;
     }
 
+    .small_content {
+        display: none;
+    }
+
 }
 
-
+/* 
 @media screen and (min-width: 1100px) {
 
     
 
 }
 
+.main_info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 2%;
+        font-size: 120%;
+        color: white;
+        gap: 5%;
+        background-color: rgba(0,0,0,0.5);
+        
+    }
+
+    .main_info > div:first-child {
+    grid-column: 1 / -1; /* Spans from the first column line to the last */
+    /* }
+
+    .experience_list{
+        padding-left: 10%;
+    }
+
+    .experience_list li{
+        padding-left: 3%;
+        font-size: 90%;
+    }
+
+    .experience_list li::marker {
+    content: "\f005"; /* FontAwesome Unicode */
+    /* font-family: FontAwesome;
+    font-size: var(--icon-size);
+    color: #275656;
+    }
+
+    .nice_aj img {
+        max-width: 90%;
+        max-height: 95%;
+        object-fit: contain;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .main_info div{
+        height: auto;
+    } 
+     */
