@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/logo-drk.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Home</title>
@@ -13,14 +13,35 @@
     <header>
         <nav>
             <div class="skip_div"><a href="#skip" class="skip">Skip to Main Content</a></div>
-            <img class = "eclipse" src="../home_images/eclipse_small_circle.png">
-            <ul class="big_nav">
-                <a href="" class="name">A.J. deVaux</a>
-                <li><a href="" class="current">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="projects.html">Work & Projects</a></li>
-                <li><a href="about.html">About Me</a></li>
-            </ul>
+            <div class="big_nav">
+                <div class = "eclipse"></div>
+                <div class="name"><a href="">A.J. deVaux</a></div>
+                <ul class="big_list">
+                    <li><a href="" class="current">Home</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="projects.html">Work & Projects</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+
+            <div class="small_nav">
+                <div class = "small_eclipse"></div>
+                <div class="small_name"><a href="">A.J. deVaux</a></div>
+                <div class="dropdown" tabindex="0">
+                    <div class="container" onclick="bar_dropdown(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+
+                            <div id="main_dropdown" class="dropdown-content">
+                                <a href="" class="current">Home</a>
+                                <a href="research.html">Research</a>
+                                <a href="projects.html">Work & Projects</a>
+                                <a href="about.html">About Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -30,6 +51,39 @@
             <span class="those">Not all Those Who Wander are Lost</div><div class="tolk">- J.R.R. Tolkien</div>
         </h1>
 
+        <div class="main_info" id="skip">
+
+            <div class="info_p">
+                <p>Hello and welcome to my website!  I am going into my final year at the University of Michigan studying Astronomy & Astrophysics, Interdisciplinary Physics, and Information Analysis.  My path in college has been a little all over the place, and I am still trying to figure out where it all leads.  In the past few years I have:</p>
+            </div>
+            <div>
+                <ul class="experience_list">
+                    <li>Spent over 3 years working as a teaching aide for an intro python class</li>
+                    <li>Participated in research on star mapping for 1 year</li>
+                    <li>Interned as an strategy analyst for Lear Corporation</li>
+                    <li>Completed a capstone project performing request analysis for the Bentley Historical Library</li>
+                    <li>And I created a <a href="https://viraux.github.io/339_Portfolio/">mock website for the Krusty Krab</a></li>
+                </ul>
+            </div>
+
+            <div class="nice_aj"><img src="home_images/nice_aj.jpg"></div>
+        </div>
+
+        <div class="end_info">
+        <p>For more details on any of these things and even more, check out the other pages on this website.  </p>
+
+            <div class="page_containers">
+                <ul>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="projects.html">Work & Projects</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+
     </main>
+
+    <script src="js/nav.js"></script>
+    <script src="https://kit.fontawesome.com/797c67656a.js" crossorigin="anonymous"></script>
 </body>
 </html>

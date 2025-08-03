@@ -31,7 +31,7 @@ h1 {
 
 a {
     color: white;
-    font-size: 2.5vw;
+    font-size: 100%;
 }
 
 a.current {
@@ -47,62 +47,126 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 2.5vw;
-    height: auto;
+    direction:ltr;
 }
 
-.big_nav {
-    width: 100%;
-    padding: 1% 0%;
+.small_nav{
+    display: grid;
+    grid-template-columns: 5% 55% 40%;
 }
 
-.big_nav li{
-    display: inline;
-    padding: 0 1%;
-    justify-content: center
+.big_nav{
+    display: none;
 }
 
-.name{
-    float: left;
-    display: flex;
-    text-align:center;
-    padding-left: 1%;
-    color: white;
+
+.big_list{
+    display: none;
+}
+
+.container {
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #f1f1f1;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    /* Rotate first bar */
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+    }
+    
+    /* Fade out the second bar */
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    /* Rotate last bar */
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+    }
+    .dropdown-content{
+      display:none;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    direction:rtl;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
     text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+.dropdown-content .small_current {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+
+.small_name{
+    align-self: center;
+    justify-self: left;
+    padding-left: 2%;
 }
 
-.eclipse{
-    width: 4%;
-    height: auto;
-    float: left;
-    align-content: center;
-    padding: .45% 0%;
-    /* margin-top: .3%; */
+
+.small_name a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 200%;
 }
 
-
-/* .name::before{
-    /* content:url("../home_images/eclipse_small_circle.png");
-    width: 5%; */
-
-    /* background-image: url("../home_images/eclipse_small_circle.png");
+.small_eclipse{
+    background-image: url("../home_images/eclipse_small_circle.png");
+    height: 90%;
     background-size: contain;
-    background-position: center;
     background-repeat: no-repeat;
-    display: inline-block; */
-    /* width: 3vw;  */
-    /* height: 3vw; */
-    /* content:""; */
-    /* padding-right: 1vw; */
+    background-position: center;
+    align-self: center;
+}
+
 
 
 /* Home */
 
 .home {
     background-color: lightcyan;
-    background-image: url(../home_images/star1.jpg);
-    background-position: center center;
-    background-size: 150%;
+    background-image: url(../home_images/star1_rot.jpg);
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -111,4 +175,103 @@ nav{
     font-size: 60%;
 }
 
+.main_info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2%;
+    font-size: 120%;
+    color: white;
+    gap: 5%;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+.main_info > div:first-child {
+  grid-column: 1 / -1; /* Spans from the first column line to the last */
+}
+
+.experience_list{
+    padding-left: 10%;
+}
+
+.experience_list li{
+    padding-left: 3%;
+    font-size: 90%;
+}
+
+.experience_list li::marker {
+  content: "\f005"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  font-size: var(--icon-size);
+  color: #275656;
+}
+
+.nice_aj img {
+    max-width: 90%;
+    max-height: 95%;
+    object-fit: contain;
+    align-self: center;
+    justify-self: center;
+}
+
+.main_info div{
+    height: auto;
+}
+
+
+
+
+
+@media screen and (min-width: 673px) {
+
+    .small_nav{
+        display: none;
+    }
+
+    .big_nav{
+        display: grid;
+        grid-template-columns: 5% 35% 60%;
+    }
+
+    .big_list {
+        display: block;
+        width: 100%;
+        padding: 1% 0%;
+        align-self: center;
+    }
+
+    .big_list li{
+        display: inline;
+        padding: 0 1%;
+        justify-content: center
+    }
+
+    .name{
+        align-self: center;
+        justify-self: left;
+    }
+
+    .name a{
+        text-decoration: none;
+        text-align: center;
+        font-size: 150%;
+    }
+
+    .eclipse{
+        background-image: url("../home_images/eclipse_small_circle.png");
+        height: 90%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        align-self: center;
+    }
+
+}
+
+
+@media screen and (min-width: 1100px) {
+
+    
+
+}
 
