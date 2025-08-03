@@ -43,7 +43,7 @@ a.current {
 
 nav{
     text-align: right;
-    padding: 1% 2%;
+    padding: 5% 2%;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 2.5vw;
@@ -171,7 +171,7 @@ nav{
 
 .quote {
     font-size: 200%;
-    padding: 0 5%;
+    padding: 5% 5%;
 }
 
 .not, .all, .those, .who, .wander {
