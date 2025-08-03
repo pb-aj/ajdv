@@ -43,7 +43,7 @@ a.current {
 
 nav{
     text-align: right;
-    padding: 5% 2%;
+    padding: 2% 2%;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 2.5vw;
@@ -171,39 +171,26 @@ nav{
 
 .quote {
     font-size: 200%;
-    padding: 5% 5%;
-    height: 90dvh;
+    padding: 5% 0%;
+    min-height: 90dvh;
+    max-height: 100dvh;
     align-content: center;
+    justify-content: space-evenly;
 }
 
-.not, .all, .those, .who, .wander {
+.not, .who, .are {
     margin: 8% 0;
-}
-
-.all {
     display: block;
     text-align: center;
-    padding-right: 20%;
 }
 
-.those {
-    display: block;
-    text-align: right;
-}
-
-.wander {
-    display: block;
-    text-align: right;
-}
-
-.are{
-    display: block;
-    margin-top: 12%;
-}
 
 .tolk {
+    display: block;
+    margin: 8% 0%;
     text-align: right;
-    font-size: 60%;
+    font-size: 50%;
+    height: 100%;
 }
 
 
@@ -251,9 +238,10 @@ nav{
 }
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 673px) {
 
     /* General */
+
     .small_nav{
         display: none;
     }
@@ -298,17 +286,19 @@ nav{
 
     /* Home */
 
-    .all {
+    .quote{
+        font-size: 130%;
         padding: 0;
-        display: inline;
     }
 
-    .those, .wander {
-        display: inline;
-    }
-
-    .are {
+    .not, .who, .are {
+        margin: 1vw 0;
         display: block;
+        text-align: center;
+    }
+
+    .tolk {
+        margin: 4% 0%;
     }
 
 }
