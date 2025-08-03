@@ -269,9 +269,10 @@ color: #275656;
 
 .page_containers div{
     text-align: center;
+    line-height: 1.5;
 }
 
-.page_containers a{
+.page_containers span{
     background-color: rgba(0,0,0,0.5);
     padding: 2%;
 }
@@ -381,6 +382,26 @@ color: #275656;
 
     .small_content {
         display: none;
+    }
+
+    .big_content{
+        display: grid;
+        grid-template-columns: 65% 35%;
+        height: fit-content;
+        padding: 5%;
+        font-size: 200%;
+        color: white;
+        gap: 2%;
+        background-color: rgba(0,0,0,0.5);
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        line-height: 1.5;
+    }
+
+    .big_content div:last-child{
+        grid-column: 1 / -1; 
+        padding-bottom: 0;
     }
 
 }
