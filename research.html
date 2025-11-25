@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/research.css">
+    <style>
+        /* Custom font setup using Tailwind defaults and Inter via the system */
+        header {
+            font-family: 'Times New Roman', sans-serif;
+        }
+        body {
+            font-family: 'Times New Roman', sans-serif; 
+            background-color: #f7f9fb;
+        }
+    </style>
     <title>Research</title>
 </head>
 <body class="research">
@@ -19,8 +30,8 @@
                 <ul class="big_list">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="" class="current">Research</a></li>
-                    <li><a href="projects.html">Work & Projects</a></li>
-                    <li><a href="about.html">About Me</a></li>
+                    <!-- <li><a href="projects.html">Work & Projects</a></li> -->
+                    <!-- <li><a href="about.html">About Me</a></li> -->
                 </ul>
             </div>
 
@@ -36,8 +47,8 @@
                             <div id="main_dropdown" class="dropdown-content">
                                 <a href="" class="current">Home</a>
                                 <a href="research.html">Research</a>
-                                <a href="projects.html">Work & Projects</a>
-                                <a href="about.html">About Me</a>
+                                <!-- <a href="projects.html">Work & Projects</a> -->
+                                <!-- <a href="about.html">About Me</a> -->
                         </div>
                     </div>
                 </div>
@@ -45,22 +56,84 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Un-spot-table Noise: Searching for Null Space RV Signals</h1>
-        <h2>[Title not Finalized]</h2>
-        <h3>A.J. deVaux, Emily Rauscher, Rachael Roettenbacher</h3>
+<body class="p-4 sm:p-8">
 
-        <p>[Insert Abstract Here]</p>
+    <!-- All document content is now contained within the main semantic tag -->
+    <main class="poster-container">
 
-        <p>Button for Poster</p>
+        <!-- Title and Authors/Affiliations -->
+        <div class="title-block">
+            <h1 class="">
+                Un-spot-able Signals: <br>
+                Searching for Null Space Radial Velocity
+            </h1>
+            
+            <!-- Authors Block -->
+            <div class="authors-block">
+                <p>
+                    A.J. deVaux<sup class="text-sm font-normal text-indigo-600">1</sup>, 
+                    Emily Rauscher<sup class="text-sm font-normal text-indigo-600">1</sup>, 
+                    Rachael Roettenbacher<sup class="text-sm font-normal text-indigo-600">1</sup>
+                </p>
+                <p class="affiliation">
+                    <span class="">1</span> University of Michigan
+                </p>
+                <p class="affiliation">
+                    Contact: ajdv@umich.edu
+                </p>
+            </div>
+        </div>
 
-        <h4>What is the Null Space?</h4>
 
-        <h5>Why RV Signals?</h5>
+        <!-- Main Content Grid Layout (Abstract and Poster) -->
+        <div class="content-grid">
+            
+            <!-- Left Column: Abstract (Takes 1/3 width on large screens) -->
+            <section class="abstract-section">
+                <h2>Abstract</h2>
+                <div class="abstract-text">
+                    <p>
+                        Without knowing the mass of a terrestrial exoplanet, our understanding of it will be very limited.  This makes accurately measuring the radial velocity (RV) of its host star crucial.  One issue with accomplishing this is that stars generate other sources of RV, such as RV signals induced by starspots.  Fortunately, if we can identify and map these starspots photometrically, then we can account for their added signals and remove them from our measurements.  But, on every star there exists patterns that contribute no photometric signal in stellar rotation curves called the null space.  We have determined that these “unspottable” patterns do induce RV signals, much like starspots, meaning the null space could add another complicating factor to exoplanet mass measurements.  We are searching for the significance of these invisible signals by creating a mathematical framework that identifies spatial patterns that can exist in a star’s null space.  Using these patterns as “null space” maps, we calculate the RV signals they induce for physically reasonable flux variations on the stellar surface.  We will present our results from these models and discuss the future impacts that the null space will have on detecting exoplanets using RV.
+                    </p>
+                </div>
+            </section>
 
-        <h6>Using Eigenmapping</h6>
+            <!-- Right Column: Poster Image Placeholder (Takes 2/3 width on large screens) -->
+            <section class="poster-visual-section">
+                <h2>Poster Visualization</h2>
+                
+                <!-- Placeholder Box for the Poster Image -->
+                <div class="poster-placeholder-box">
+                    <div>
+                        <!-- <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg> -->
+                        <!-- <p class="title">High-Resolution Poster Image Goes Here</p>
+                        <p class="subtitle">A visual representation of the full poster, usually in landscape format.</p> -->
+                        <img src="research_images/GLEAM_Poster.png" alt="Placeholder for academic poster image" class="hidden">
+                    </div>
+                </div>
+                <!-- <p class="caption">Clickable elements and zoom functionality can be added to this area using JavaScript.</p> -->
+            </section>
+        </div>
 
-        <h7>[More Results to Come]</h7>
+        <section class="main-figure-section">
+            <h2>Animation of Null Space Pattern Shown Above</h2>
+            
+            <div class="figure-placeholder-box">
+                <!-- <img src="research_images/gleam_ani copy.gif" alt="Main result graph or chart" class="figure-image"> -->
+                <img src="research_images/gleam_ani_medium.gif" alt="Main result graph or chart" class="figure-image">
+                <!-- <img src="research_images/gleam_ani_slow.gif" alt="Main result graph or chart" class="figure-image"> -->
+            </div>
+
+            <p class="figure-caption">
+                Above is an animated version of the example null space pattern seen in the poster above, including the photometric map (upper left), RV map (upper right), rotational light curve (lower left), and RV curve (lower right).  This is also an example of one of the visualiztion I have added to the starry library.
+            </p>
+        </section>
+        
     </main>
+
+    <script src="js/nav.js"></script>
+    <script src="https://kit.fontawesome.com/797c67656a.js" crossorigin="anonymous"></script>
 </body>
 </html>

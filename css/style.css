@@ -278,7 +278,7 @@ color: #275656;
 }
 
 .research_icon{
-    background-color: black;
+    background-color: white;
 }
 
 .research_icon video{
@@ -335,6 +335,12 @@ color: #275656;
 
 #about_current {
     color: rgba(156, 16, 237);
+}
+
+
+.research_title{
+    font-size: 300%;
+    
 }
 
 
